@@ -1,0 +1,571 @@
+//these icons are available:
+//icon-search
+//icon-comment
+//icon-gear
+//icon-wrench
+//icon-profile
+//icon-location
+//icon-video
+//icon-photo
+//icon-file
+//icon-folder
+//icon-flag
+//icon-tag
+//icon-lock
+//icon-unlock
+//icon-link
+//icon-bookmark
+//icon-list
+//icon-heart
+//icon-share
+//icon-forbidden
+//icon-sound
+//icon-eject
+//icon-play
+//icon-pause
+//icon-stop
+//icon-backward
+//icon-step-backward
+//icon-forward
+//icon-step-forward
+//icon-filter
+//icon-left
+//icon-right
+//icon-up
+//icon-down
+//
+//use this way:
+//<a href="#" class="btn"><span class="icon icon-search"></span></a>
+//labeled:
+//<a href="#" class="btn"><span class="icon icon-search"></span><span class="label">Search</span></a>
+//
+//https://codepen.io/stiffi/pen/ysbCd
+//by sti#i
+
+.btn{ 
+  display:inline-block; 
+  min-width:14px;
+  height:14px;
+  line-height: 16px;
+  margin:0 5px 5px 0;
+  background:#eee;
+  color:#666; /* Icon Color */
+  font-size: 10pt;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius:5px;
+  padding:10px;
+}
+.btn > .label{
+  display:block;
+  padding-left:10px;
+  line-height: 14px;
+  float:right;
+  cursor:pointer;
+}
+
+.icon{ 
+  float:left;
+  width:14px; 
+  height:14px; 
+  position:relative; 
+  display:block; 
+  color: #666;
+}
+.icon:before, 
+.icon:after{ 
+  position:absolute; 
+  content:""; 
+  display:block; 
+}
+
+.icon-search, 
+.icon-file:before, 
+.icon-flag, 
+.icon-tag, 
+.icon-link, 
+.icon-chevron-left, 
+.icon-chevron-right, 
+.icon-chevron-up, 
+.icon-chevron-down, 
+.icon-heart:before, 
+.icon-heart:after,
+.icon-left:after,
+.icon-right:before,
+.icon-up:after,
+.icon-down:before{ 
+  -webkit-transform:rotate(-45deg);
+  -moz-transform:rotate(-45deg);
+  -ms-transform:rotate(-45deg);
+  -o-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+}
+
+.icon-comment:after,
+.icon-wrench,
+.icon-heart:after,
+.icon-forbidden:after,
+.icon-left:before,
+.icon-right:after,
+.icon-up:before,
+.icon-down:after{
+  -webkit-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  -o-transform:rotate(45deg);
+  transform:rotate(45deg);
+}
+
+/* Search */
+.icon-search{ top:-3px; left:1px; width:13px; }
+.icon-search:before{
+  width:10px;
+  height:10px; 
+  border-radius:10px; 
+  box-shadow:0 0 0 2px inset; 
+}
+.icon-search:after{ 
+  width:4px; 
+  height:10px; 
+  top:9px;
+  left:3px;
+  box-shadow:0 0 0 2px inset; 
+  border-radius:3px; 
+}
+
+/* Comment */
+.icon-comment{ left:-1px; width:15px; }
+.icon-comment:before{ 
+  height:10px;
+  width:16px; 
+  border-radius:16px/10px; 
+  box-shadow:0 0 0 16px inset; 
+}
+.icon-comment:after{ 
+  border-top:16px solid; 
+  border-left:3px solid transparent; 
+  border-right:4px solid transparent; 
+  top:2px;
+  left:4px;
+}
+
+/* Gear */
+.icon-gear:before{
+  width:14px;
+  height:14px;
+  box-shadow:0 0 0 4px inset; 
+  border-radius:16px; 
+  border:1px dashed; 
+  top:-1px;
+  left:-1px;
+}
+
+/* Wrench */
+.icon-wrench:before{ 
+  width:4px; 
+  height:5px; 
+  top:-2px;
+  left:3px;
+  border:3px solid; 
+  border-radius:5px; 
+  border-top:none;
+}
+.icon-wrench:after{ 
+  width:4px; 
+  height:13px; 
+  top:4px;
+  left:6px;
+  box-shadow:0 0 0 16px inset; 
+  border-radius:3px; 
+}
+
+/* Profile */
+.icon-profile:before{
+  width:16px;
+  height:8px;
+  border-radius:8px 8px 0 0;
+  box-shadow:0 0 0 16px inset;
+  top:7px;
+  left:-1px;
+}
+.icon-profile:after{
+  width:7px;
+  height:8px;
+  box-shadow:0 0 0 16px inset;
+  border-radius: 7px / 8px;
+  left:3px;
+}
+
+/* Location */
+.icon-location:before{ 
+  width:8px; 
+  height:8px; 
+  left:3px;
+  border-radius:8px; 
+  box-shadow:0 0 0 3px inset; 
+}
+.icon-location:after{ 
+  top:6px;
+  left:3px;
+  border-top:10px solid;
+  border-left:4px solid transparent;
+  border-right:4px solid transparent;
+}
+
+/* Video */
+.icon-video:before{ 
+  height:12px; 
+  width:12px; 
+  border-radius:3px; 
+  box-shadow:0 0 0 15px inset; 
+  top:1px; 
+}
+.icon-video:after{ 
+  border-right:8px solid;
+  border-top:4px solid transparent;
+  border-bottom:4px solid transparent;
+  top:3px;
+  left:8px;
+}
+
+/* Photo */
+.icon-photo:before{ 
+  width:14px;
+  height:14px;
+  border-radius:14px;
+  box-shadow:0 0 0 4px inset;
+}
+.icon-photo:after{ 
+  width:14px; 
+  height:12px; 
+  box-shadow:0 0 0 2px inset; 
+  top:1px; 
+}
+
+/* File */
+.icon-file:before{ 
+  border-top:5px solid;
+  border-left:5px solid transparent;
+  border-right:5px solid transparent;
+  top:3px;
+  left:1px;
+}
+.icon-file:after{ 
+  width:11px; 
+  height:14px; 
+  box-shadow:0 0 0 2px inset; 
+  border-radius:15px 0 0 0;
+  left:1px; 
+}
+
+/* Folder */
+.icon-folder:before{
+  width:16px; 
+  height:11px; 
+  border-radius:2px 2px 0 0; 
+  box-shadow:0 0 0 20px inset;
+  top:3px;
+  left:-1px;
+}
+.icon-folder:after{ 
+  width:8px;
+  height:5px;
+  box-shadow:0 0 0 10px inset;
+  border-radius: 1px 1px 0 0;
+  left:1px;
+}
+
+/* Flag */
+.icon-flag{ 
+  height:16px; 
+  width:8px;  
+  border-left:2px solid;
+  top:-2px;
+  left:4px;
+}
+.icon-flag:before{ 
+  width:6px; 
+  height:8px; 
+  box-shadow:0 0 0 10px inset; 
+  top:1px;
+}
+.icon-flag:after{ 
+  width:5px; 
+  height:5px; 
+  box-shadow:0 0 0 8px inset; 
+  top:5px;
+  left:5px;
+}
+
+/* Tag */
+.icon-tag{ width:12px; height:14px; }
+.icon-tag:before{ 
+  width:8px; 
+  height:8px; 
+  box-shadow:0 0 0 2px inset; 
+  border-radius:8px; 
+  top:-2px;
+  left:3px;
+}
+.icon-tag:after{ 
+  width:8px; 
+  height:12px;
+  box-shadow:0 0 0 16px inset; 
+  top:3px;
+  left:3px;
+}
+
+/* Lock, Unlock */
+.icon-lock:before, 
+.icon-unlock:before{ 
+  width:14px;
+  height:10px;
+  top:5px;
+  border-radius:2px 2px 0 0;
+  box-shadow:0 0 0 16px inset;
+}
+.icon-lock:after, 
+.icon-unlock:after{ 
+  height:4px;
+  width:5px;
+  border-radius:15px 15px 0 0;
+  border:3px solid;
+  border-bottom:none;
+  top:-1px;
+  left:1px;
+}
+.icon-unlock:after{ left:-4px; }
+
+/* Link */
+.icon-link{ 
+  width:5px; 
+  height:11px; 
+  left:5px;
+  border-left:3px solid;
+}
+.icon-link:before, 
+.icon-link:after{ 
+  width:5px; 
+  height:7px; 
+  border-radius:5px; 
+  border:2px solid; 
+  left:-6px; 
+}
+.icon-link:before{ border-bottom:none; top:-4px; } 
+.icon-link:after{ border-top:none; top:6px; }
+
+/* Bookmark */
+.icon-bookmark:before{ 
+  width:0; 
+  height:5px; 
+  border:5px solid; 
+  border-bottom:6px solid transparent; 
+  left:2px; 
+}
+
+/* List */
+.icon-list:before,
+.icon-list:after{ 
+  height:2px; 
+  width:16px; 
+  border-top:3px solid; 
+  border-bottom:3px solid;
+  left:-1px;
+}
+.icon-list:after{ 
+  border-top:none;
+  border-bottom:3px solid; 
+  top:8px; 
+}
+
+/* Heart */
+.icon-heart:before, 
+.icon-heart:after{ 
+  width:10px;
+  height:14px; 
+  box-shadow:0 0 0 20px inset; 
+  border-radius:20px 20px 0 0; 
+  top:-1px;
+}
+.icon-heart:after{ left:4px; }
+
+/* Share */
+.icon-share{
+  width:14px;
+  -webkit-transform:rotate(10deg);
+  -moz-transform:rotate(10deg);
+  -ms-transform:rotate(10deg);
+  -o-transform:rotate(10deg);
+  transform:rotate(10deg);
+}
+.icon-share:before{ 
+  height:0;
+  border-left: 6px solid;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  left:8px;
+
+}
+.icon-share:after{ 
+  width:14px;
+  height:16px;
+  border-radius:16px;
+  border:0;
+  border-top:5px solid;
+  -webkit-transform:rotate(-25deg);
+  -moz-transform:rotate(-25deg);
+  -ms-transform:rotate(-25deg);
+  -o-transform:rotate(-25deg);
+  transform:rotate(-25deg);
+  top:3px;
+  left:2px;
+}
+
+/* Forbidden */
+.icon-forbidden:before{ 
+  width:14px; 
+  height:14px; 
+  box-shadow:0 0 0 3px inset; 
+  border-radius:20px; 
+}
+.icon-forbidden:after{ 
+  width:2px;
+  height:12px;
+  box-shadow:0 0 0 16px inset;
+  top:1px;
+  left:6px;
+}
+
+/* Sound */
+.icon-sound:before{
+  width:7px;
+  height:8px;
+  box-shadow:0 0 0 16px inset;
+  top:3px;
+  border-radius:2px;
+}
+.icon-sound:after{
+  border-right:8px solid;
+  border-top:8px solid transparent;
+  border-bottom:8px solid transparent;
+  top:-1px;
+  left:5px;
+}
+
+/* Eject */
+.icon-eject:before{ 
+  width:0;
+  border-bottom:8px solid; 
+  border-right:8px solid transparent; 
+  border-left:8px solid transparent; 
+  left:-1px;
+}
+.icon-eject:after{ 
+  height:4px; 
+  width:16px;
+  box-shadow:0 0 0 16px inset;
+  top:10px;
+  left:-1px;
+}
+
+/* Play */
+.icon-play:before{
+  border-left:9px solid;
+  border-top:8px solid transparent;
+  border-bottom:8px solid transparent;
+  top:-1px;
+  left:3px;
+}
+
+/* Pause */
+.icon-pause:before, 
+.icon-pause:after{
+  width:4px;
+  height:14px;
+  box-shadow:0 0 0 16px inset;
+  left:2px;
+}
+.icon-pause:after{ left:8px; }
+
+/* Stop */
+.icon-stop{ box-shadow:0 0 0 16px inset; }
+
+/* Backward / Forward */
+.icon-backward:before, 
+.icon-backward:after,
+.icon-forward:before, 
+.icon-forward:after{
+  border-top:8px solid transparent; 
+  border-bottom:8px solid transparent;
+  top:-1px;
+  left:-1px;
+}
+.icon-backward:before, 
+.icon-backward:after{ border-right:8px solid; }
+
+.icon-forward:before, 
+.icon-forward:after{ border-left:8px solid; }
+
+.icon-backward:after,
+.icon-forward:after{ left:7px; }
+
+/* Step-Backward / Step-Forward */
+.icon-step-backward:before,
+.icon-step-forward:after{ 
+  width:3px; 
+  height:14px; 
+  box-shadow:0 0 0 8px inset;
+}
+.icon-step-backward:after,
+.icon-step-forward:before{
+  border-top:8px solid transparent;
+  border-bottom:8px solid transparent;
+}
+.icon-step-backward:before{ left:1px; }
+.icon-step-backward:after{
+  border-right:8px solid;
+  top:-1px;
+  left:4px;
+}
+.icon-step-forward:before{
+  border-left:8px solid;
+  top:-1px;
+  left:1px;
+}
+.icon-step-forward:after{ left:10px; }
+
+/* Filter */
+.icon-filter:before{
+  height:0;
+  border-top:10px solid;
+  border-left:7px solid transparent;
+  border-right:7px solid transparent;
+}
+.icon-filter:after{
+  width:4px;
+  height:9px;
+  box-shadow:0 0 0 16px inset;
+  top:6px;
+  left:5px;
+}
+
+/* Left / Right / Up / Down */
+.icon-left:before,
+.icon-left:after,
+.icon-right:before,
+.icon-right:after,
+.icon-up:before,
+.icon-up:after,
+.icon-down:before,
+.icon-down:after{
+  width:3px;
+  height:10px;
+  box-shadow:0 0 0 16px inset;
+  top:-1px;
+  left:5px;
+}
+.icon-right:before, .icon-right:after{ left:6px; }
+.icon-left:after, .icon-right:after{ top:5px; }
+.icon-up:before, .icon-down:before{ left:3px; }
+.icon-up:after, .icon-down:after{ left:8px; }
+.icon-up:before, .icon-up:after, .icon-down:before, .icon-down:after{ top:2px; }

@@ -1,0 +1,168 @@
+body {
+  font-family: Lato, sans-serif;
+}
+
+div#page_main_menu,
+div#page_manage_person,
+div#page_manage_groups,
+div#page_new_group,
+div#page_settings,
+div#page_select_group {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.menu {
+  padding: 0 10%;
+}
+
+.main {
+  padding: 0 10% 10px;
+  display: flex;
+  flex-direction: row;  
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: absolute;
+  top: 82px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.menuItem {
+  width: 100%;
+  height: 40px;
+  line-height: 26px;
+  font-size: 20px;
+  padding: 2px 5px;
+  background-color: #0073e6;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+input#addPerson,
+input#addGroup {
+  width: calc(90% - 10px);
+  padding: 5px 10px;
+  font-size: 20px;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+
+input#addGroup {
+  width: 100%;
+}
+
+button#submitGroup,
+button.next,
+button.backToMain,
+button#next_ingame {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  margin: 0 auto;
+  font-size: 20px;
+  padding: 5px 10px;
+  width: 80%;
+  margin-left: -40%;
+  background-color: #0073e6;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.checkmark {
+  display: inline-block;
+  width: 10%;
+}
+.checkmark:after {
+  /*Add another block-level blank space*/
+  content: '';
+  display: block;
+  /*Make it a small rectangle so the border will create an L-shape*/
+  width: 6px;
+  height: 15px;
+  /*Add a white border on the bottom and left, creating that 'L' */
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  /*Rotate the L 45 degrees to turn it into a checkmark*/
+  transform: rotate(45deg);
+  margin: 0 auto;
+}
+
+ul.allPersons,
+ul.allGroups,
+ul.allCards,
+ul#allPlayers,
+ul#allDeaths,
+ul#allCards {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: auto;
+  height: calc(100% - 100px);
+  margin-bottom: 60px;
+  margin-top: 15px;
+}
+
+li.person,
+li.group,
+li.card,
+li.player,
+li.death {
+  list-style-type: none; 
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  margin-top: 5px;
+}
+
+li.group { 
+  cursor: pointer;
+}
+
+span.deletePerson,
+span.deleteGroup {
+  float: right;
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+  align-content: center;
+  cursor: pointer;
+}
+
+.back,
+.settings {
+  border: none;
+  opacity: 1;
+  background-color: inherit;
+  cursor: pointer;
+  height: 38px;
+  vertical-align: middle;
+}
+
+.back {
+  float: left;
+}
+
+.settings {
+  float: right;
+}
+
+div.topBar {
+  position: absolute;
+  top: 21px;
+  left: 5px; 
+  right: 5px;
+  height: 38px;
+  vertical-align: middle;
+}
+
+h1 {
+  text-align: center;
+}

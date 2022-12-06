@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Werwolf</title>
+    <link href="icons.css" rel="stylesheet" type="text/css">   
+    <link href="style.css" rel="stylesheet" type="text/css"> 
+  </head>
+  <body>
+    <div id="page_main_menu">
+      <h1>Werwolf</h1> 
+      <div class="menu">
+        <button data-target="page_manage_persons" class="menuItem button">Spieler verwalten</button>
+        <button data-target="page_manage_groups" class="menuItem button">Gruppen verwalten</button> 
+        <button data-target="page_select_group" class="menuItem button" id="newGame">Neues Spiel</button>
+      </div>
+    </div>
+    
+    <div id="page_manage_persons" style="display:none;">
+      <h1>Personen</h1>   
+      <div class="topBar">
+        <button class="back"><span class="icon icon-left"></span></button>
+        <button class="settings"><span class="icon icon-gear"></span></button>
+      </div>
+      <div class="main">
+        <input type="text" id="addPerson" placeholder="Name der Person" onkeypress="addByEnter(event)">
+        <button class="checkmark" id="submitPerson"></button>
+        <ul class="allPersons">
+        </ul>
+      </div>
+    </div>
+    
+    <div id="page_manage_groups" style="display:none;">
+      <h1>Gruppen</h1>   
+      <div class="topBar">
+        <button class="back"><span class="icon icon-left"></span></button>
+        <button class="settings"><span class="icon icon-gear"></span></button>
+      </div>
+      <div class="main">
+        <button data-target="page_new_group" class="menuItem button">Neue Gruppe</button>
+        <ul class="allGroups">
+        </ul>
+      </div>
+    </div> 
+    
+    <div id="page_new_group" style="display:none;">
+      <h1>Neue Gruppe</h1>   
+      <div class="topBar">
+        <button class="back"><span class="icon icon-left"></span></button>
+        <button class="settings"><span class="icon icon-gear"></span></button>
+      </div>
+      <div class="main">
+        <input type="text" id="addGroup" placeholder="Name der Gruppe">
+        <ul class="allPersons">
+        </ul>
+        <button id="submitGroup">Erstellen</button>
+      </div>
+    </div>
+    
+    <div id="page_select_group" style="display:none;">
+      <h1>Gruppe wählen</h1>   
+      <div class="topBar">
+        <button class="back"><span class="icon icon-left"></span></button>
+        <button class="settings"><span class="icon icon-gear"></span></button>
+      </div>
+      <div class="main">
+        <ul class="allGroups">
+        </ul>
+        <button class="next">Weiter</button>
+      </div>
+    </div>
+    
+    <div id="page_select_players" style="display:none;">
+      <h1>Spieler wählen</h1>   
+      <div class="topBar">
+        <button class="back"><span class="icon icon-left"></span></button>
+        <button class="settings"><span class="icon icon-gear"></span></button>
+      </div>
+      <div class="main">
+        <ul class="allPersons">
+        </ul>
+        <button class="next">Weiter</button>
+      </div>
+    </div>
+    
+    <div id="page_select_cards" style="display:none;">
+      <h1>Karten wählen</h1>   
+      <div class="topBar">
+        <button class="back"><span class="icon icon-left"></span></button>
+        <button class="settings"><span class="icon icon-gear"></span></button>
+      </div>
+      <div class="main">
+        <em style="width:100%;margin-bottom:-10px;text-align:center;" id="num_persons"></em>
+        <ul class="allCards">
+        </ul>
+        <button class="next">Weiter</button>
+      </div>
+    </div>
+    
+    <div id="page_game" style="display:none;">
+      <h1 id="game_heading">Es beginnt...</h1>
+      <div class="topBar">
+        <button class="back"><span class="icon icon-left"></span></button>
+        <button class="settings"><span class="icon icon-gear"></span></button>
+      </div>
+      <div class="main">
+        <ul id="allPlayers" style="display:none;">
+        </ul>
+        <ul id="allDeaths" style="display:none;">
+        </ul>
+        <ul id="allCards" style="display:none;">
+        </ul>
+        <div id="game_message" style="width: 100%">
+          <h4 class="message">
+          </h4>
+          <button class="menuItem" style="display:none;" id="edit">
+            Bearbeiten
+          </button>
+          <input type="hidden" id="type">
+        </div>
+        <button id="next_ingame">Weiter</button>
+      </div>
+    </div>
+    
+    <div id="page_error" style="display:none;">
+      <h1>Fehler!</h1>   
+      <div class="topBar">
+        <button class="back"><span class="icon icon-left"></span></button>    
+      </div>
+        <div class="main">
+          <h3 id="error_message"></h3>
+          <button class="backToMain">Zurück zum Haupmenü</button>
+        </div>
+    </div>
+    
+    <div id="page_settings" style="display:none;">
+      <h1>Einstellungen</h1>   
+      <div class="topBar">
+        <button class="back"><span class="icon icon-left"></span></button> 
+      </div>
+        <div class="main"></div>
+    </div>  
+    <script src="interface.js"></script>
+    <script src="app.js"></script> 
+    <script src="werwolf.js"></script>
+  </body>
+</html>

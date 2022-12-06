@@ -1,0 +1,84 @@
+// Verschiedene Stufen der Nacht:
+// nur erste Nacht:
+// 0: amor festlegen
+// 1: amor bestätigen
+// 2: amor liebespaar wählen
+// 3: amor liebespaar bestätigen
+// 4: harter bursche (bursche) festlegen
+// 5: harter bursche bestätigen
+// 6: aussätzige (aussatzige) festlegen
+// 7: aussätzige bestätigen
+// 8: lykanthrophin festlegen
+// 9: lykanthrophin bestätigen
+// 10: jäger (jager) festlegen
+// 11: jäger bestätigen
+// 12: altermann festlegen
+// 13: altermann bestätigen
+// 14: trunkenbold festlegen
+// 15: trunkenbold bestätigen   (auch in nacht 3, daycycle = 4)
+// 16: trunkenbold karte festlegen
+// 17: wolfsjunges festlegen
+// 18: wolfsjunges bestätigen
+// 19: strolch festlegen
+// 20: strolch bestätigen
+// 21: strolch opfer festlegen
+// 22: strolch opfer bestätigen
+// 23: geist festlegen
+// 24: geist bestätigen
+// 25: einsamer werwolf (einsamerwerwolf) festlegen
+// 26: einsamer werwolf bestätigen
+// 27: gerber festlegen
+// 28: gerber bestätigen
+// jede Nacht:
+// 29: schlampe festlegen (erste Nacht)
+// 30: schlampe bestätigen (erste Nacht)
+// 31: schlampe ziel wählen
+// 32: schlampe ziel bestätigen
+// 33: leibwächter (leibwachter) festlegen (erste Nacht)
+// 34: leibwächter bestätigen (erste Nacht)
+// 35: leibwächter ziel wählen
+// 36: leibwächter ziel bestätigen
+// 37: werwölfe festlegen (erste Nacht)
+// 38: werwölfe bestätigen (erste Nacht)
+// 39: werwölfe opfer (ggf 2) wählen
+// 40: werwölfe opfer bestätigen
+// 41: vampire festlegen (erste Nacht)
+// 42: vampire bestätigen (erste Nacht)
+// 43: vampire opfer wählen
+// 44: vampire opfer bestätigen
+// 45: hexe festlegen (erste Nacht)
+// 46: hexe bestätigen (erste Nacht)
+// 47: hexe heilen wählen
+// 48: hexe heilen bestätigen
+// 49: hexe töten wählen
+// 50: hexe töten bestätigen
+// 51: hexer festlegen (erste Nacht)
+// 52: hexer bestätigen (erste Nacht)
+// 53: hexer heilen wählen
+// 54: hexer heilen bestätigen
+// 55: hexer töten wählen
+// 56: hexer töten bestätigen
+// 57: seherin festlegen (erste Nacht)
+// 58: seherin bestätigen (erste Nacht)
+// 59: seherin spieler wählen
+// 60: seherin spieler bestätigen + anzeigen   
+// 61: seher festlegen (erste Nacht)
+// 62: seher bestätigen (erste Nacht)
+// 63: seher spieler wählen
+// 64: seher spieler bestätigen + anzeigen
+// 65: alte vettel (altevettel) festlegen (erste Nacht)
+// 66: alte vettel bestätigen (erste Nacht)
+// 67: alte vettel opfer wählen
+// 68: alte vettel opfer bestätigen
+// 69: doppelgänger (doppelganger) festlegen (erste Nacht)
+// 70: doppelgänger bestätigen (erste Nacht)
+// 71: doppelgänger identität wählen
+// 72: doppelgänger identität bestätigen
+// 73: kultführer (kultfuhrer) festlegen (erste Nacht)
+// 74: kultführer bestätigen (erste Nacht)
+// 75: kultführer spieler wählen
+// 76: kultführer spieler bestätigen
+// 77: unruhestifterin festlegen (erste Nacht)
+// 78: unruhestifterin bestätigen (erste Nacht)
+// 79: unruhestifterin aufmischen
+// 80: unruhestifterin aufmischen bestätigen
